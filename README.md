@@ -1,3 +1,3 @@
-# Deling
-- http://www.delinkg.si/ 
+# Deling 
+- [www.adelinkg.si](http://www.delinkg.si/)
 - December 2019.
