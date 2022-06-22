@@ -1,0 +1,260 @@
+//****************************** BODY ******************************//
+body{
+  background-color: #22232d !important;
+}
+a, button{
+  user-select: none;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+//****************************** END BODY ******************************//
+
+//****************************** NAVBAR ******************************//
+.active {
+  font-weight: bold;
+}
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  text-decoration: none !important;
+  user-select: none !important; 
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+// custom navbar class //
+.navbar {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $black !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  outline: none;
+  border: none;
+
+  .navbar-brand {
+    font-size: 24px;
+    font-family: $fontLogo;
+    color: $white;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  .nav-item {
+    color: #F0EFEF !important;
+    border-bottom: 2px solid $black;
+
+    &:hover {
+      border-bottom: 2px solid $purple;
+      transition: 0.3s;
+    }
+  }
+
+  h1{
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.navbar.scrolled {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  transition: 0.3s;
+}
+
+
+// toggler //
+.collapse.show {
+  height: 100vh !important;
+  padding-top: 20% !important;
+
+  .navbar-nav {
+    visibility:  visible !important;
+    a {
+      font-size: 24px !important;
+      padding-top: 25px !important;
+      text-align: center !important;
+      border: none !important;
+
+      &:hover {
+        color: $purple !important;
+        border: none !important;
+        transform: scale(1.2) !important;
+      }
+    }
+  }
+}
+//****************************** END NAVBAR ******************************//
+
+//****************************** FOOTER ******************************//
+footer {
+  color: $white;
+  .fas {
+    color: $purple;
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .main {
+    background-color: $darkPurple;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .list-inline {
+      text-align: center;
+
+      .list-inline-item {
+        a {
+          color: #F0EFEF;
+          text-decoration: none;
+          padding-right: 10px;
+          border-right: 1px solid #F0EFEF;
+        }
+      }
+
+      #lastChild {
+        border-right: none;
+      }
+    }
+  }
+
+  .copyright {
+    background-color: $black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .left {
+      text-align: left;
+      font-size: 18px;
+      font-family: $fontLogo;
+
+      img {
+        margin-right: 5px;
+      }
+
+      span {
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    .right {
+      text-align: right;
+
+      span {
+        position: relative;
+        top: 3px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .copyright {
+    .right {
+      span {
+        position: relative;
+        top: 3px;
+        font-size: 11px;
+        padding-left: 0;
+        margin-left: 0;
+
+      }
+
+    }
+  }
+}
+//****************************** END FOOTER ******************************//
+
+.title-text {
+  position: absolute;
+  top: 50%;
+  width: 80% !important;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: $white;
+
+  p {
+      margin-bottom: 0;
+  }
+
+  .title {
+      position: relative;
+      font-size: 40px;
+
+      &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0px;
+          background-color: $purple;
+          width: 50px;
+          height: 2px;
+      }
+  }
+}
+
+// item //
+.item {
+  padding: 20px;
+  background-color: $black;
+  border-bottom: 1px solid $purple;
+  box-shadow: 10px 10px 5px 0px rgba(33, 31, 33, 1);
+  height: 100%;
+  width: 100%;
+  display: table;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 5px;
+
+  p {
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      margin: 0;
+      padding: 0;
+  }
+}

@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+@import "_var";
+@import "_default";
+
+//*************** main.php ***************
+.header {
+    position: relative;
+    font-family: $font;
+    color: #F0EFEF;
+    height: 100vh !important;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    
+
+    .our-vison {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        padding-right: 10%;
+
+        h2{
+            font-size: 40px;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: bold;
+            b{
+                text-transform: lowercase;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: $purple;
+                width: 60px;
+                height: 2px;
+                bottom: 5px;
+                left: 0;
+            }
+
+        }
+    }
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .overlay{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8) 10%, rgba(255, 255, 255, 0));
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+}
+
+.about-us {
+    color: #F0EFEF;
+    // background-color: #22232D;
+    background-color: $bg-color;
+
+    .about-us-title {
+        color: $white;
+        padding-top: 40px;
+        padding-left: 35px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $purple;
+            width: 50px;
+            height: 2px;
+            bottom: 5px;
+            left: 35px;
+        }
+    }
+
+    .about-us-text{
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 18px;
+    }
+
+}
+
+.why-bim {
+    color: $white;
+    background: url("../images/pat21.png"),linear-gradient(180deg, rgba(29, 29, 29, 1) 30%, rgba(108, 61, 151, 0.3) 80%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+
+    .why-bim-title{
+        color: $white;
+        padding-top: 50px;
+        padding-left: 35px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $purple;
+            width: 50px;
+            height: 2px;
+            bottom: -2px;
+            left: 35px;
+        }
+
+        p{
+            color: $white;
+            margin-bottom: 0;
+        }
+
+    }
+    .why-bim-text{
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 18px;
+
+        .far{
+            font-size: 16px;
+            color: $purple;
+            position: relative;
+            bottom: 5px;
+        }
+    }
+}
+
+
+//*************** portolio.php ***************//
+#portfolio-body{
+    color: $white;
+
+    .portfolio-title {
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.9) 12%, rgba(255, 255, 255, 0)),
+        url("../images/portfolio.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        position: relative;
+    }
+
+    .portfolio-text{
+        padding: 40px 20px;
+        background-color: $black;
+        font-size: 18px;
+    }
+
+    .activity-area {
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        .area-title{
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: $purple;
+                width: 65px;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+            }
+        }
+
+        .margin{
+            margin-bottom: 20px;
+        }
+
+        .item {
+            padding: 20px;
+            background-color: $black;
+            border-bottom: 1px solid $purple;
+            box-shadow: 10px 10px 5px 0px rgba(33, 31, 33, 1);
+            height: 100%;
+            width: 100%;
+            display: table;
+
+            p {
+                text-align: center;
+                vertical-align: middle;
+                display: table-cell;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+//*************** how-we-do.php ***************//
+#how-we-do-body {
+    .how-we-do-body-title {
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.9) 12%, rgba(255, 255, 255, 0)),
+        url("../images/how-we-do.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        position: relative;
+    }
+
+    .how-we-do-it {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: #fff;
+
+        .row {
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+            .item-dot {
+
+                p {
+                    padding-left: 30px;
+                    font-size: 18px;
+                }
+
+                .fas {
+                    color: $purple;
+                }
+            }
+        }
+
+        .item-4-col{
+            margin-bottom: 15px;
+        }
+
+        .items{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+}
+
+//******************** contact.php ********************//
+#contact-body {
+    .contact-title {
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.9) 12%, rgba(255, 255, 255, 0)),
+        url("../images/contact.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        position: relative;
+    }
+
+    .contact-text{
+        color: $white;
+        font-size: 18px;
+        text-align: center;
+        padding: 40px 20px;
+        background-color: $black;
+    }
+
+    .contact-info {
+        background-color: $darkPurple;
+        text-align: center;
+        padding-top: 40px;
+
+        .col-md-4{
+            margin-bottom: 20px;
+        }
+
+        .item {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            p {
+                color: $white;
+                display: block;
+                padding: 5px;
+            }
+
+            i {
+                text-align: center;
+                display: block;
+                color: $purple;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 58px;
+                padding-bottom: 5px;
+            }
+
+        }
+
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+
+    .contact-bank {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        .item {
+            padding: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            p {
+                color: $white;
+                display: block;
+                padding: 5px;
+            }
+
+            i {
+                text-align: center;
+                display: block;
+                color: $purple;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 58px;
+                padding-bottom: 5px;
+            }
+        }
+
+    }
+
+}
+
+//******************** @media ********************//
+@media screen and (max-width: 568px) {
+    #show-hide {
+        display: none;
+    }
+
+    .why-bim-text{
+
+        .bim{
+
+            font-size: 20px;
+    
+            .far{
+                font-size: 12px;
+                color: $purple;
+                position: relative;
+                bottom: 3px;
+            }
+        }
+    }
+}
+//******************** @media contact.php ********************//
+@media (max-width: 767.98px) {
+    .header {
+        .our-vison {
+            h2 {
+                font-size: 24px;
+
+                b {
+                    color: $white;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    #contact-body {
+        .contac-form {
+            form {
+                width: 100%;
+            }
+        }
+    }
+
+    #how-we-do-body {
+        .how-we-do-it {
+            .item-4-col {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .title-text {
+        padding-left: 45px;
+    }
+
+    .bim{
+        font-size: 20px;
+    }
+
+    .navbar-nav {
+        visibility:  hidden;
+    }
+
+}
+@media (max-width: 991.98px) {
+    #contact-body {
+        .contac-form {
+            form {
+                width: 60%;
+            }
+        }
+    }
+
+    .navbar-nav {
+        visibility:  hidden;
+    }
+ }
+// Extra small devices (portrait phones, less than 576px)
+
+
+// Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
