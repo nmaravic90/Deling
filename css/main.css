@@ -254,7 +254,7 @@ footer {
 
 .why-bim {
   color: #fff;
-  background: url("../images/pat21.png"), linear-gradient(180deg, #1d1d1d 30%, rgba(108, 61, 151, 0.3) 80%);
+  background: linear-gradient(180deg, #1d1d1d 30%, rgba(108, 61, 151, 0.3) 80%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
