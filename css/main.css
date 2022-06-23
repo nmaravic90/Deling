@@ -9,9 +9,6 @@ a, button {
 *:focus {
   outline: 0 !important; }
 
-.active {
-  font-weight: bold; }
-
 .icon-bar {
   width: 22px;
   height: 2px;
@@ -254,7 +251,7 @@ footer {
 
 .why-bim {
   color: #fff;
-  background: linear-gradient(180deg, #1d1d1d 30%, rgba(108, 61, 151, 0.3) 80%);
+  background: url("../images/pat21.png"), linear-gradient(180deg, #1d1d1d 30%, rgba(108, 61, 151, 0.3) 80%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -457,3 +454,7 @@ footer {
 
   .navbar-nav {
     visibility: hidden; } }
+
+.active {
+  font-style: italic;
+}
