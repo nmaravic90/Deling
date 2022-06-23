@@ -4,17 +4,20 @@ $('.navbar-toggler').on('click', function () {
 });
 
 $(document).ready(function () {
-  $('.nav-link').removeClass('active');
-  if (location.pathname == '/deling.sk/index.php') {
+  if (window.location.pathname.split('/').pop() == 'index') {
+    $('.nav-link').removeClass('active');
     $('#home').addClass('active');
   }
-  if (location.pathname == '/deling.sk/portfolio.php') {
+  if (window.location.pathname.split('/').pop() == 'portfolio') {
+    $('.nav-link').removeClass('active');
     $('#portfolio').addClass('active');
   }
-  if (location.pathname == '/deling.sk/how-we-do.php') {
+  if (window.location.pathname.split('/').pop() == 'how-we-do') {
+    $('.nav-link').removeClass('active');
     $('#how-we-do').addClass('active');
   }
-  if (location.pathname == '/deling.sk/contact.php') {
+  if (window.location.pathname.split('/').pop() == 'contact') {
+    $('.nav-link').removeClass('active');
     $('#contact').addClass('active');
   }
 });
@@ -24,9 +27,3 @@ $(function () {$(document).scroll(function () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
-
-// $('#back-to-top').on('click', function (e) {
-//   e.preventDefault();
-//   $('html, body').animate({ scrollTop: 0 }, 1000);
-// });
-
