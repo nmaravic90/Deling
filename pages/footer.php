@@ -1,3 +1,4 @@
+<?php echo '
 <footer class="w-100">
     <div class="copyright">
         <div class="container">
@@ -12,3 +13,4 @@
             </div>
         </div>
 </footer>
+'; ?>
