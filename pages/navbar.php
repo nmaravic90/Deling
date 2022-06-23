@@ -1,3 +1,4 @@
+<?php echo '
 <nav id="mynav" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="http://www.deling.sk/">
@@ -19,3 +20,4 @@
         </div>
     </div>
 </nav>
+'; ?>

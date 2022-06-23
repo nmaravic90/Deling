@@ -1,3 +1,4 @@
+<?php echo '
 <main id="contact-body">
     <div class="contact-title">
         <div class="container">
@@ -70,3 +71,4 @@
         </div>
     </div>
 </main>
+'; ?>

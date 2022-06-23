@@ -1,3 +1,4 @@
+<?php echo '
 <main id="how-we-do-body">
     <div class="how-we-do-body-title">
         <div class="container">
@@ -108,3 +109,4 @@
         </div>
     </div>
 </main>
+'; ?>

@@ -1,3 +1,4 @@
+<?php echo '
 <main id="portfolio-body">
     <div class="portfolio-title">
         <div class="container">
@@ -125,3 +126,4 @@
         </div>
     </div>
 </main>
+'; ?>
